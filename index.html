@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector Game</title>
+    
+	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel ="stylesheet" type = "text/css" href = "assets/css/style.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src ="assets/javascript/game.js"></script>
+   
+</head>
+<body>
+
+    <div class="container">
+    <div class= "header ">
+     <h1> CRYSTAL COLLECTORS</h1>
+    </div>
+
+    <div class ="info">
+    <div class ="row">
+    <p> You will be given Random number at start of game .</p>
+    <p> There are four crystals below.By clicking on crystal you will add specific amount of points to your total score
+      You will win the game by matching total score to the random number.You will loos the game if your total score goes  above the random number
+    value of each crystal hidden from you until you click on it.Each time when the game is start,the game will change value of each crystal</p>
+    
+    </div>
+    </div>
+
+     
+    <div  class ="row ">
+        <h4> RANDOM NUMBER</h4>
+        <h4 id="randomnumber"></h4>
+    </div>
+    
+    <div  class ="row" id ="buttondisplay">
+    </div class ="col-md-3">
+    <img class="button" id = "crystal1" src="assets/images/crystal4.png">
+    <img class  ="button" id = "crystal2" src= "assets/images/crystal3.png">
+    <img class ="button" id = "crystal3" src="assets/images/crystal2.png">
+    <img class ="button" id ="crystal4" src ="assets/images/crystal1.png">
+    </div>
+    </div>
+    <div class ="row">
+    <div class = "col-md-3"  >
+        
+         <h4> WINS:</h4>
+         <h4  id ="wincount"> </h4>
+    </div>
+    <div class = "col-md-3" >
+            <h4> LOSSES:</h4>
+            <h4 id = "losscount"></h4>
+    </div>
+
+    <div class ="col-md-3 ">
+        <button type="button" class ="btn btn-warning " id ="btngame"> Play Again</button>
+        <h3   id ="winorloss"></h3> 
+      </div>
+
+    <div class ="col-md-3" >
+            <h3> Your total score is:</h3>
+            <h3  id ="displayscore"> </h3>
+    </div>
+    
+         
+        
+    </div>
+    
+    </div>
+    
+      
+    
+</body>
+</html>
